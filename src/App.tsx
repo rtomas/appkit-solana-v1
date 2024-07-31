@@ -190,10 +190,12 @@ return (
       <h2>WalletConnect AppKit + Solana v1</h2>
       <p>
       <w3m-button balance="hide" />
-      Balance: {balance}
       </p>
       {isConnected && (
         <>
+          <p>
+          Balance: {balance}
+          </p>
           <div className="btn-container">
           <button onClick={handleFaucet}>Solana faucet</button>
           <button onClick={handleGetBalance}>Update Balance</button>
